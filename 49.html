@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height vs Min-Height vs Max-Height</title>
+  <style>
+    .height {
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px;
+    }
+
+    .min-height {
+      min-height: 100px;
+      background-color: lightgreen;
+      margin: 10px;
+    }
+
+    .max-height {
+      max-height: 100px; 
+      background-color: lightcoral;
+      overflow: hidden;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="height">Height: 100px</div>
+  <div class="min-height">Min-Height: 100px (expands if content overflows)</div>
+  <div class="max-height">Max-Height: 100px (cuts off if content exceeds)</div>
+
+</body>
+</html>
